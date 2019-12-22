@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <div class="header">header</div>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div class="footer">footer</div>
+  <div id="app grid-container">
+    <div class="header grid-x align-center">header</div>
+    <div class="grid-x main align-center">
+      <div class="image-container grid-y">
+        <div class="grid-x">
+          <img alt="Vue logo" class="grid-x" src="./assets/logo.png">
+        </div>
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+      </div>
+    </div>
+    <div class="footer grid-x align-center">footer</div>
   </div>
 </template>
 
